@@ -1,0 +1,6 @@
+db:
+  host: localhost
+  user: root
+  password: ''
+  name: newiconadmin_development
+  ping_table: pinger_script

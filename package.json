@@ -1,0 +1,14 @@
+{
+  "name": "Nimon",
+  "description": "Nimon the deamon! Deamon to post out server stats!",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "async":"0.1.22",
+	"mysql":"2.0.0-alpha3",
+	"request":"2.11.4",
+	"postmark":"0.1.6",
+	"underscore":"1.4.1",
+	"config":"0.4.17"
+  }
+}
