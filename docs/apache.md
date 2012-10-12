@@ -1,9 +1,15 @@
 Nimon can parse the Apache mod_status output this shows:
 
- - current requests per second, 
- - idle and busy workers. 
+ - Total Accesses: 4
+ - Total kBytes: 1
+ - Uptime: 60
+ - ReqPerSec: .0666667
+ - BytesPerSec: 17.0667
+ - BytesPerReq: 256
+ - BusyWorkers: 1
+ - IdleWorkers: 5
  
-May require additional configuration of the Apache server.
+This may require additional configuration of the Apache server (but it's easy)!
 
 ## 1) Configuring Apache
 
