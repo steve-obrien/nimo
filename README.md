@@ -1,14 +1,15 @@
 nimon
 =====
 
-nimon the deamon! Nimon is a server monitoring tool. It periodically polls the system and posts 
+Nimon the deamon! Nimon is a server monitoring tool. It periodically polls the system and posts 
 stats on server performance to a server monitoring application
 
 Install
 =======
 
- 1. install node http://nodejs.org/download/
+### 1. install node http://nodejs.org/download/
 
+Taken from the docs:
 For Debian Squeeze, your best bet is to compile node by yourself (as root):
 
     apt-get install python g++ make
@@ -18,18 +19,20 @@ For Debian Squeeze, your best bet is to compile node by yourself (as root):
     ./configure
     make install
 
- 2. On the server you wish to monitor go to the directory you wish to install nimon then:
+### 2. On the server you wish to monitor go to the directory you wish to install nimon then:
+
 
     git clone git@git.newicon.net:nimon
     cd nimon
     npm install
 
- 3. Configure nimon for your device. To setup mysql moitoring you will have to put your mysql username and password details into the config file
+### 3. Configure nimon for your device. 
+To setup mysql moitoring you will have to put your mysql username and password details into the config file
 inside the nimon directory:
 
     nano config/default.yaml 
 
- 4. Run nimon
+### 4. Run nimon
 
     node nimon &
 
