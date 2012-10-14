@@ -3,7 +3,7 @@ nimon:
   device: 
   key: ???
   url: http://127.0.0.1/nii/public/htdocs/hosting/server/monitor
-  pollFreq: 1
+  pollFreq: 60
 
 mysql:
   host: localhost
