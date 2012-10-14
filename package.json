@@ -5,10 +5,11 @@
   "private": true,
   "dependencies": {
     "async":"0.1.22",
+    "config":"0.4.17",
+    "js-yaml":"1.0.2",
 	"mysql":"2.0.0-alpha3",
+    "postmark":"0.1.6",
 	"request":"2.11.4",
-	"postmark":"0.1.6",
-	"underscore":"1.4.1",
-	"config":"0.4.17"
+	"underscore":"1.4.1"
   }
 }
