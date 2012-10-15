@@ -6,16 +6,16 @@ stdClass Object
             [hostname] => R2D2.local
             [arch] => x64
             [release] => 11.4.0
-            [uptime] => 35940
+            [uptime] => 33718
             [totalmem] => 12288
-            [freemem] => 6964.92578125
+            [freemem] => 6875.8046875
         )
 
     [loadAvrgs] => stdClass Object
         (
-            [1] => 1.361328125
-            [5] => 1.025390625
-            [15] => 0.8857421875
+            [1] => 1.68798828125
+            [5] => 1.33056640625
+            [15] => 1.20751953125
         )
 
     [ioStats] => stdClass Object
@@ -26,31 +26,22 @@ stdClass Object
         (
         )
 
-    [apacheStatus] => stdClass Object
-        (
-            [reqPerSec] => 0
-            [bytesPerSec] => 24.5181
-            [busyWorkers] => 1
-            [idleWorkers] => 9
-            [bytesPerReq] => 216.681
-        )
-
     [diskUseage] => Array
         (
             [0] => Array
                 (
                     [0] => /dev/disk0s2
                     [1] => 409179680
-                    [2] => 238.802200317
-                    [3] => 151.177810669
+                    [2] => 238.802051544
+                    [3] => 151.177959442
                     [4] => 62%
                 )
 
             [1] => Array
                 (
                     [0] => devfs
-                    [1] => 183
-                    [2] => 0.000174522399902
+                    [1] => 185
+                    [2] => 0.000176429748535
                     [3] => 0
                     [4] => 100%
                 )
@@ -67,28 +58,80 @@ stdClass Object
             [3] => Array
                 (
                     [0] => total
-                    [1] => 271.064417839
-                    [2] => 193.65209198
+                    [1] => 271.064270973
+                    [2] => 193.652240753
                 )
 
+        )
+
+    [apacheStatus] => stdClass Object
+        (
+            [reqPerSec] => 0.0333333333333
+            [busyWorkers] => 1
+            [idleWorkers] => 9
+            [bytesPerReq] => 216.8
+            [bytesPerSec] => 26.3481
         )
 
     [networkTraffic] => stdClass Object
         (
+            [lo0] => stdClass Object
+                (
+                    [recv_bytes] => 139487
+                    [trans_bytes] => 139487
+                )
+
+            [gif0*] => stdClass Object
+                (
+                    [recv_bytes] => 0
+                    [trans_bytes] => 0
+                )
+
+            [stf0*] => stdClass Object
+                (
+                    [recv_bytes] => 0
+                    [trans_bytes] => 0
+                )
+
+            [en0] => stdClass Object
+                (
+                    [recv_bytes] => 3255
+                    [trans_bytes] => 4598
+                )
+
+            [en1] => stdClass Object
+                (
+                    [recv_bytes] => 291
+                    [trans_bytes] => 0
+                )
+
+            [fw0] => stdClass Object
+                (
+                    [recv_bytes] => 0
+                    [trans_bytes] => 0
+                )
+
+            [p2p0] => stdClass Object
+                (
+                    [recv_bytes] => 0
+                    [trans_bytes] => 0
+                )
+
+            [vboxn] => stdClass Object
+                (
+                    [recv_bytes] => 0
+                    [trans_bytes] => 0
+                )
+
         )
 
     [mysqlStatus] => stdClass Object
         (
-            [mysqlVersion] => Array
-                (
-                    [0] => 5
-                    [1] => 1
-                    [2] => 44
-                )
-
-            [connections] => 0
+            [connections] => 0.0004
+            [createdTmpDiskTables] => 1799
             [maxUsedConnections] => 2
             [openFiles] => 16
+            [slowQueries] => 0
             [tableLocksWaited] => 0
             [threadsConnected] => 1
             [secondsBehindMaster] => 0
@@ -98,230 +141,215 @@ stdClass Object
         (
             [0] => Array
                 (
-                    [0] => steve
-                    [1] => 11268
-                    [2] => 38.7
-                    [3] => 0.2
-                    [4] => 3041284
-                    [5] => 23064
-                    [6] => s001
-                    [7] => R+
-                    [8] => 7:01pm
-                    [9] => 0:00.22
-                    [10] => node nimon
+                    [0] => _windowserver
+                    [1] => 191
+                    [2] => 8.5
+                    [3] => 0.7
+                    [4] => 2956112
+                    [5] => 90908
+                    [6] => ??
+                    [7] => Ss
+                    [8] => 9:03am
+                    [9] => 9:41.40
+                    [10] => /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Resources/WindowServer -daemon
                 )
 
             [1] => Array
                 (
                     [0] => steve
-                    [1] => 405
-                    [2] => 3.7
-                    [3] => 0.8
-                    [4] => 2636636
-                    [5] => 95376
+                    [1] => 398
+                    [2] => 2.8
+                    [3] => 1.4
+                    [4] => 963008
+                    [5] => 181496
                     [6] => ??
                     [7] => S
                     [8] => 9:19am
-                    [9] => 2:41.84
-                    [10] => /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal -psn_0_159783
+                    [9] => 3:47.92
+                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.1.624918084
                 )
 
             [2] => Array
                 (
                     [0] => steve
                     [1] => 845
-                    [2] => 1.8
+                    [2] => 2.5
                     [3] => 1.3
-                    [4] => 1008356
-                    [5] => 162248
+                    [4] => 1007332
+                    [5] => 160832
                     [6] => ??
                     [7] => S
                     [8] => 10:08am
-                    [9] => 20:43.47
+                    [9] => 19:56.23
                     [10] => /Applications/Spotify.app/Contents/MacOS/Spotify -psn_0_319566
                 )
 
             [3] => Array
                 (
-                    [0] => _windowserver
-                    [1] => 191
-                    [2] => 1.0
-                    [3] => 0.7
-                    [4] => 2946268
-                    [5] => 81852
+                    [0] => steve
+                    [1] => 232
+                    [2] => 2.3
+                    [3] => 0.6
+                    [4] => 2622916
+                    [5] => 72696
                     [6] => ??
-                    [7] => Ss
-                    [8] => 9:03am
-                    [9] => 10:13.87
-                    [10] => /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Resources/WindowServer -daemon
+                    [7] => S
+                    [8] => 9:04am
+                    [9] => 0:25.70
+                    [10] => /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock 
                 )
 
             [4] => Array
                 (
                     [0] => steve
                     [1] => 674
-                    [2] => 0.9
-                    [3] => 7.4
-                    [4] => 4142392
-                    [5] => 935512
+                    [2] => 1.3
+                    [3] => 7.1
+                    [4] => 4104048
+                    [5] => 888832
                     [6] => ??
                     [7] => S
                     [8] => 9:23am
-                    [9] => 29:55.67
+                    [9] => 28:08.34
                     [10] => /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java -Djdk.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home -classpath /Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/boot.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/org-openide-modules.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/org-openide-util-lookup.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/org-openide-util.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/boot_ja.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/boot_pt_BR.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/boot_ru.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/boot_zh_CN.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_ja.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_pt_BR.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_ru.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_zh_CN.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_ja.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_pt_BR.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_ru.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_zh_CN.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_ja.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_pt_BR.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_ru.jar:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_zh_CN.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar -Dnetbeans.default_userdir_root=/Users/steve/Library/Application Support/NetBeans -Dnetbeans.system_http_proxy=DIRECT -Dnetbeans.system_http_non_proxy_hosts= -Dnetbeans.dirs=/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/nb:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/ergonomics:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/ide:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/java:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/apisupport:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/webcommon:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/websvccommon:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/enterprise:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/mobility:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/profiler:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/python:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/php:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/identity:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/harness:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/cnd:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/dlight:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/groovy:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/extra:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/javacard:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/javafx: -Dnetbeans.home=/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/platform -Dcom.apple.mrj.application.apple.menu.about.name=NetBeans -Xdock:name=NetBeans -Xdock:icon=/Applications/NetBeans/NetBeans 7.2.app/Contents/MacOS/../Resources/NetBeans/bin/../nb/netbeans.icns -Dnetbeans.importclass=org.netbeans.upgrade.AutoUpgrade -Dnetbeans.accept_license_class=org.netbeans.license.AcceptLicense -XX:MaxPermSize=384m -Xmx768m -client -Xss2m -Xms32m -XX:PermSize=32m -Dapple.laf.useScreenMenuBar=true -Dapple.awt.graphics.UseQuartz=true -Dsun.java2d.noddraw=true -Dsun.zip.disableMemoryMapping=true -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/Users/steve/Library/Application Support/NetBeans/7.2/var/log/heapdump.hprof org.netbeans.Main --userdir /Users/steve/Library/Application Support/NetBeans/7.2 --cachedir /Users/steve/Library/Caches/NetBeans/7.2 --branding nb
                 )
 
             [5] => Array
                 (
-                    [0] => _coreaudiod
-                    [1] => 215
-                    [2] => 0.7
-                    [3] => 0.1
-                    [4] => 2478200
-                    [5] => 9572
+                    [0] => steve
+                    [1] => 284
+                    [2] => 1.3
+                    [3] => 0.8
+                    [4] => 783168
+                    [5] => 96920
                     [6] => ??
-                    [7] => Ss
+                    [7] => S
                     [8] => 9:04am
-                    [9] => 2:18.43
-                    [10] => /usr/sbin/coreaudiod 
+                    [9] => 6:12.36
+                    [10] => /Applications/Dropbox.app/Contents/MacOS/Dropbox -psn_0_90134
                 )
 
             [6] => Array
                 (
                     [0] => steve
-                    [1] => 390
-                    [2] => 0.3
-                    [3] => 1.5
-                    [4] => 1137484
-                    [5] => 185564
+                    [1] => 405
+                    [2] => 0.9
+                    [3] => 0.8
+                    [4] => 2635232
+                    [5] => 94972
                     [6] => ??
                     [7] => S
                     [8] => 9:19am
-                    [9] => 11:54.74
-                    [10] => /Applications/Google Chrome.app/Contents/MacOS/Google Chrome -psn_0_135201
+                    [9] => 2:34.63
+                    [10] => /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal -psn_0_159783
                 )
 
             [7] => Array
                 (
-                    [0] => steve
-                    [1] => 398
-                    [2] => 0.1
-                    [3] => 1.4
-                    [4] => 962000
-                    [5] => 170204
+                    [0] => _coreaudiod
+                    [1] => 215
+                    [2] => 0.7
+                    [3] => 0.1
+                    [4] => 2478728
+                    [5] => 10100
                     [6] => ??
-                    [7] => S
-                    [8] => 9:19am
-                    [9] => 4:02.54
-                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.1.624918084
+                    [7] => Ss
+                    [8] => 9:04am
+                    [9] => 2:00.02
+                    [10] => /usr/sbin/coreaudiod 
                 )
 
             [8] => Array
                 (
-                    [0] => steve
-                    [1] => 71
-                    [2] => 0.1
-                    [3] => 0.1
-                    [4] => 2517124
-                    [5] => 17728
+                    [0] => root
+                    [1] => 76
+                    [2] => 0.6
+                    [3] => 0.0
+                    [4] => 2468228
+                    [5] => 1732
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:06.39
-                    [10] => /System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow console
+                    [9] => 1:40.91
+                    [10] => /usr/libexec/hidd 
                 )
 
             [9] => Array
                 (
                     [0] => steve
-                    [1] => 11257
-                    [2] => 0.1
-                    [3] => 0.0
-                    [4] => 2435492
-                    [5] => 1164
-                    [6] => s001
+                    [1] => 2275
+                    [2] => 0.6
+                    [3] => 0.7
+                    [4] => 898344
+                    [5] => 81824
+                    [6] => ??
                     [7] => S
-                    [8] => 6:54pm
-                    [9] => 0:00.02
-                    [10] => -bash 
+                    [8] => 2:14pm
+                    [9] => 1:39.31
+                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.66.1227268022
                 )
 
             [10] => Array
                 (
-                    [0] => root
-                    [1] => 11244
-                    [2] => 0.0
-                    [3] => 0.0
-                    [4] => 2468592
-                    [5] => 2152
-                    [6] => s000
-                    [7] => Ss
-                    [8] => 6:52pm
-                    [9] => 0:00.22
-                    [10] => login -pfl steve /bin/bash -c exec -la bash /bin/bash
+                    [0] => steve
+                    [1] => 390
+                    [2] => 0.4
+                    [3] => 1.5
+                    [4] => 1138172
+                    [5] => 184868
+                    [6] => ??
+                    [7] => S
+                    [8] => 9:19am
+                    [9] => 11:24.27
+                    [10] => /Applications/Google Chrome.app/Contents/MacOS/Google Chrome -psn_0_135201
                 )
 
             [11] => Array
                 (
                     [0] => steve
-                    [1] => 11210
-                    [2] => 0.0
-                    [3] => 0.3
-                    [4] => 843868
-                    [5] => 42076
-                    [6] => ??
-                    [7] => S
-                    [8] => 6:48pm
-                    [9] => 0:01.25
-                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.89.1501714538
+                    [1] => 1067
+                    [2] => 0.2
+                    [3] => 1.1
+                    [4] => 3152728
+                    [5] => 139456
+                    [6] => s003
+                    [7] => S+
+                    [8] => 10:21am
+                    [9] => 2:49.25
+                    [10] => /usr/local/Cellar/mongodb/2.2.0-x86_64/mongod --config /usr/local/etc/mongod.conf
                 )
 
             [12] => Array
                 (
                     [0] => steve
-                    [1] => 11199
-                    [2] => 0.0
+                    [1] => 413
+                    [2] => 0.1
                     [3] => 0.4
-                    [4] => 846700
-                    [5] => 48392
+                    [4] => 934056
+                    [5] => 50036
                     [6] => ??
                     [7] => S
-                    [8] => 6:47pm
-                    [9] => 0:02.30
-                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.88.213659148
+                    [8] => 9:20am
+                    [9] => 3:52.34
+                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=ppapi --channel=390.6.1287901041 --lang=en-US
                 )
 
             [13] => Array
                 (
-                    [0] => steve
-                    [1] => 7357
+                    [0] => root
+                    [1] => 3060
                     [2] => 0.0
-                    [3] => 0.3
-                    [4] => 833360
-                    [5] => 37012
-                    [6] => ??
-                    [7] => S
-                    [8] => 4:46pm
-                    [9] => 0:10.78
-                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.79.2005105459
+                    [3] => 0.0
+                    [4] => 2468592
+                    [5] => 2156
+                    [6] => s001
+                    [7] => Ss
+                    [8] => 3:00pm
+                    [9] => 0:00.22
+                    [10] => login -pfl steve /bin/bash -c exec -la bash /bin/bash
                 )
 
             [14] => Array
-                (
-                    [0] => steve
-                    [1] => 2275
-                    [2] => 0.0
-                    [3] => 0.7
-                    [4] => 898620
-                    [5] => 87356
-                    [6] => ??
-                    [7] => S
-                    [8] => 2:14pm
-                    [9] => 1:49.21
-                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.66.1227268022
-                )
-
-            [15] => Array
                 (
                     [0] => steve
                     [1] => 2204
@@ -332,8 +360,23 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 2:06pm
-                    [9] => 0:02.87
+                    [9] => 0:02.77
                     [10] => /System/Library/Image Capture/Devices/PTPCamera.app/Contents/MacOS/PTPCamera -psn_0_602259
+                )
+
+            [15] => Array
+                (
+                    [0] => steve
+                    [1] => 1735
+                    [2] => 0.0
+                    [3] => 0.3
+                    [4] => 832876
+                    [5] => 33336
+                    [6] => ??
+                    [7] => S
+                    [8] => 12:49pm
+                    [9] => 0:01.98
+                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.56.1178701267
                 )
 
             [16] => Array
@@ -341,13 +384,13 @@ stdClass Object
                     [0] => steve
                     [1] => 1608
                     [2] => 0.0
-                    [3] => 0.6
-                    [4] => 865460
-                    [5] => 76492
+                    [3] => 0.4
+                    [4] => 848884
+                    [5] => 53864
                     [6] => ??
                     [7] => S
                     [8] => 12:32pm
-                    [9] => 0:13.06
+                    [9] => 0:07.74
                     [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.55.448180461
                 )
 
@@ -358,11 +401,11 @@ stdClass Object
                     [2] => 0.0
                     [3] => 0.9
                     [4] => 887224
-                    [5] => 110672
+                    [5] => 110424
                     [6] => ??
                     [7] => S
                     [8] => 12:23pm
-                    [9] => 0:27.45
+                    [9] => 0:27.30
                     [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.48.1967315940
                 )
 
@@ -372,31 +415,166 @@ stdClass Object
                     [1] => 1094
                     [2] => 0.0
                     [3] => 0.7
-                    [4] => 871228
-                    [5] => 83596
+                    [4] => 878856
+                    [5] => 84464
                     [6] => ??
                     [7] => S
                     [8] => 10:43am
-                    [9] => 0:19.81
+                    [9] => 0:18.34
                     [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.35.1271897609
                 )
 
             [19] => Array
                 (
                     [0] => steve
+                    [1] => 1093
+                    [2] => 0.0
+                    [3] => 1.5
+                    [4] => 2871740
+                    [5] => 183428
+                    [6] => s004
+                    [7] => S+
+                    [8] => 10:43am
+                    [9] => 0:41.95
+                    [10] => /usr/bin/java -jar ./winstone-0.9.10.jar --httpPort=8080 --ajp13Port=-1 --warfile=./mViewer.war
+                )
+
+            [20] => Array
+                (
+                    [0] => steve
+                    [1] => 1092
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2435488
+                    [5] => 884
+                    [6] => s004
+                    [7] => S+
+                    [8] => 10:43am
+                    [9] => 0:00.00
+                    [10] => /bin/bash ./start_mViewer.sh
+                )
+
+            [21] => Array
+                (
+                    [0] => steve
+                    [1] => 1087
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2435492
+                    [5] => 1188
+                    [6] => s004
+                    [7] => S
+                    [8] => 10:42am
+                    [9] => 0:00.01
+                    [10] => -bash 
+                )
+
+            [22] => Array
+                (
+                    [0] => root
+                    [1] => 1086
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2468592
+                    [5] => 2192
+                    [6] => s004
+                    [7] => Ss
+                    [8] => 10:42am
+                    [9] => 0:00.21
+                    [10] => login -pfl steve /bin/bash -c exec -la bash /bin/bash
+                )
+
+            [23] => Array
+                (
+                    [0] => steve
                     [1] => 1077
                     [2] => 0.0
                     [3] => 0.7
                     [4] => 879400
-                    [5] => 87448
+                    [5] => 87228
                     [6] => ??
                     [7] => S
                     [8] => 10:35am
-                    [9] => 0:36.31
+                    [9] => 0:35.11
                     [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.32.1602423685
                 )
 
-            [20] => Array
+            [24] => Array
+                (
+                    [0] => steve
+                    [1] => 1064
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2435492
+                    [5] => 1156
+                    [6] => s003
+                    [7] => S
+                    [8] => 10:21am
+                    [9] => 0:00.01
+                    [10] => -bash 
+                )
+
+            [25] => Array
+                (
+                    [0] => root
+                    [1] => 1063
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2468592
+                    [5] => 2192
+                    [6] => s003
+                    [7] => Ss
+                    [8] => 10:21am
+                    [9] => 0:00.21
+                    [10] => login -pfl steve /bin/bash -c exec -la bash /bin/bash
+                )
+
+            [26] => Array
+                (
+                    [0] => steve
+                    [1] => 1025
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2435188
+                    [5] => 2036
+                    [6] => s002
+                    [7] => S+
+                    [8] => 10:11am
+                    [9] => 0:00.31
+                    [10] => ssh admin@cheetara.vm.newicon.net
+                )
+
+            [27] => Array
+                (
+                    [0] => steve
+                    [1] => 1019
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2435492
+                    [5] => 1160
+                    [6] => s002
+                    [7] => S
+                    [8] => 10:09am
+                    [9] => 0:00.01
+                    [10] => -bash 
+                )
+
+            [28] => Array
+                (
+                    [0] => root
+                    [1] => 1018
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2467568
+                    [5] => 2132
+                    [6] => s002
+                    [7] => Ss
+                    [8] => 10:09am
+                    [9] => 0:00.21
+                    [10] => login -pfl steve /bin/bash -c exec -la bash /bin/bash
+                )
+
+            [29] => Array
                 (
                     [0] => steve
                     [1] => 1013
@@ -411,7 +589,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [21] => Array
+            [30] => Array
                 (
                     [0] => steve
                     [1] => 1012
@@ -426,7 +604,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [22] => Array
+            [31] => Array
                 (
                     [0] => steve
                     [1] => 1011
@@ -437,11 +615,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 10:08am
-                    [9] => 0:54.04
+                    [9] => 0:53.70
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [23] => Array
+            [32] => Array
                 (
                     [0] => steve
                     [1] => 1010
@@ -456,7 +634,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [24] => Array
+            [33] => Array
                 (
                     [0] => steve
                     [1] => 1007
@@ -471,7 +649,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [25] => Array
+            [34] => Array
                 (
                     [0] => steve
                     [1] => 1005
@@ -486,7 +664,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [26] => Array
+            [35] => Array
                 (
                     [0] => steve
                     [1] => 1004
@@ -501,7 +679,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [27] => Array
+            [36] => Array
                 (
                     [0] => steve
                     [1] => 1003
@@ -516,7 +694,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [28] => Array
+            [37] => Array
                 (
                     [0] => steve
                     [1] => 1002
@@ -531,7 +709,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [29] => Array
+            [38] => Array
                 (
                     [0] => steve
                     [1] => 1001
@@ -546,7 +724,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [30] => Array
+            [39] => Array
                 (
                     [0] => steve
                     [1] => 1000
@@ -561,7 +739,7 @@ stdClass Object
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [31] => Array
+            [40] => Array
                 (
                     [0] => root
                     [1] => 999
@@ -572,11 +750,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 10:08am
-                    [9] => 0:01.56
+                    [9] => 0:01.49
                     [10] => /Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -k start -DPHP
                 )
 
-            [32] => Array
+            [41] => Array
                 (
                     [0] => nobody
                     [1] => 984
@@ -585,13 +763,13 @@ stdClass Object
                     [4] => 1289336
                     [5] => 84272
                     [6] => ??
-                    [7] => S
+                    [7] => R
                     [8] => 10:08am
-                    [9] => 0:25.65
+                    [9] => 0:24.93
                     [10] => /Applications/XAMPP/xamppfiles/sbin/mysqld --basedir=/Applications/XAMPP/xamppfiles --datadir=/Applications/XAMPP/xamppfiles/var/mysql --user=nobody --log-error=/Applications/XAMPP/xamppfiles/var/mysql/R2D2.local.err --pid-file=/Applications/XAMPP/xamppfiles/var/mysql/R2D2.local.pid --socket=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock --port=3306
                 )
 
-            [33] => Array
+            [42] => Array
                 (
                     [0] => root
                     [1] => 866
@@ -606,7 +784,7 @@ stdClass Object
                     [10] => /bin/sh /Applications/XAMPP/xamppfiles/bin/mysqld_safe --datadir=/Applications/XAMPP/xamppfiles/var/mysql --pid-file=/Applications/XAMPP/xamppfiles/var/mysql/R2D2.local.pid
                 )
 
-            [34] => Array
+            [43] => Array
                 (
                     [0] => steve
                     [1] => 847
@@ -617,11 +795,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 10:08am
-                    [9] => 0:01.77
+                    [9] => 0:01.69
                     [10] => /Applications/XAMPP/XAMPP Control.app/Contents/MacOS/XAMPP Control -psn_0_323663
                 )
 
-            [35] => Array
+            [44] => Array
                 (
                     [0] => steve
                     [1] => 768
@@ -636,7 +814,7 @@ stdClass Object
                     [10] => /usr/libexec/lsboxd 
                 )
 
-            [36] => Array
+            [45] => Array
                 (
                     [0] => steve
                     [1] => 763
@@ -647,11 +825,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 10:02am
-                    [9] => 0:03.65
+                    [9] => 0:03.63
                     [10] => /Applications/TextEdit.app/Contents/MacOS/TextEdit -psn_0_270402
                 )
 
-            [37] => Array
+            [46] => Array
                 (
                     [0] => root
                     [1] => 760
@@ -666,7 +844,37 @@ stdClass Object
                     [10] => /usr/sbin/filecoordinationd 
                 )
 
-            [38] => Array
+            [47] => Array
+                (
+                    [0] => steve
+                    [1] => 682
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2435492
+                    [5] => 1184
+                    [6] => s000
+                    [7] => S+
+                    [8] => 9:27am
+                    [9] => 0:00.16
+                    [10] => -bash 
+                )
+
+            [48] => Array
+                (
+                    [0] => root
+                    [1] => 681
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2468592
+                    [5] => 2112
+                    [6] => s000
+                    [7] => Ss
+                    [8] => 9:27am
+                    [9] => 0:00.21
+                    [10] => login -pf steve
+                )
+
+            [49] => Array
                 (
                     [0] => steve
                     [1] => 457
@@ -681,7 +889,7 @@ stdClass Object
                     [10] => /bin/bash /Applications/NetBeans/NetBeans 7.2.app/Contents/MacOS/../Resources/NetBeans/bin/../platform/lib/nbexec --userdir /Users/steve/Library/Application Support/NetBeans/7.2 --cachedir /Users/steve/Library/Caches/NetBeans/7.2 --jdkhome -J-Dcom.apple.mrj.application.apple.menu.about.name=NetBeans -J-Xdock:name=NetBeans -J-Xdock:icon=/Applications/NetBeans/NetBeans 7.2.app/Contents/MacOS/../Resources/NetBeans/bin/../nb/netbeans.icns --branding nb --clusters /Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/nb:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/ergonomics:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/ide:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/java:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/apisupport:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/webcommon:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/websvccommon:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/enterprise:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/mobility:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/profiler:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/python:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/php:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/identity:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/harness:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/cnd:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/dlight:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/groovy:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/extra:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/javacard:/Applications/NetBeans/NetBeans 7.2.app/Contents/Resources/NetBeans/javafx: -J-Dnetbeans.importclass=org.netbeans.upgrade.AutoUpgrade -J-Dnetbeans.accept_license_class=org.netbeans.license.AcceptLicense -J-XX:MaxPermSize=384m -J-Xmx768m -J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.zip.disableMemoryMapping=true -psn_0_192559
                 )
 
-            [39] => Array
+            [50] => Array
                 (
                     [0] => steve
                     [1] => 438
@@ -692,11 +900,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:22am
-                    [9] => 0:00.16
+                    [9] => 0:00.15
                     [10] => /usr/bin/ssh-agent -l
                 )
 
-            [40] => Array
+            [51] => Array
                 (
                     [0] => root
                     [1] => 414
@@ -707,56 +915,41 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:20am
-                    [9] => 0:00.17
+                    [9] => 0:00.16
                     [10] => /System/Library/Frameworks/CoreMediaIO.framework/Resources/VDC.plugin/Contents/Resources/VDCAssistant 
                 )
 
-            [41] => Array
-                (
-                    [0] => steve
-                    [1] => 413
-                    [2] => 0.0
-                    [3] => 0.4
-                    [4] => 926284
-                    [5] => 44360
-                    [6] => ??
-                    [7] => S
-                    [8] => 9:20am
-                    [9] => 3:58.90
-                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=ppapi --channel=390.6.1287901041 --lang=en-US
-                )
-
-            [42] => Array
+            [52] => Array
                 (
                     [0] => steve
                     [1] => 400
                     [2] => 0.0
-                    [3] => 0.2
-                    [4] => 763540
-                    [5] => 30320
+                    [3] => 0.3
+                    [4] => 775456
+                    [5] => 32304
                     [6] => ??
                     [7] => S
                     [8] => 9:19am
-                    [9] => 0:48.76
+                    [9] => 0:48.28
                     [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=gpu-process --channel=390.3.598026388 --gpu-vendor-id=0x1002 --gpu-device-id=0x9488 --gpu-driver-vendor --gpu-driver-version
                 )
 
-            [43] => Array
+            [53] => Array
                 (
                     [0] => steve
                     [1] => 395
                     [2] => 0.0
                     [3] => 0.3
                     [4] => 782132
-                    [5] => 39220
+                    [5] => 38940
                     [6] => ??
                     [7] => S
                     [8] => 9:19am
-                    [9] => 0:03.93
+                    [9] => 0:03.74
                     [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --extension-process --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.0.264514905
                 )
 
-            [44] => Array
+            [54] => Array
                 (
                     [0] => steve
                     [1] => 375
@@ -767,11 +960,11 @@ stdClass Object
                     [6] => ??
                     [7] => SN
                     [8] => 9:13am
-                    [9] => 3:50.82
+                    [9] => 3:39.31
                     [10] => /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.pool.0
                 )
 
-            [45] => Array
+            [55] => Array
                 (
                     [0] => steve
                     [1] => 326
@@ -782,11 +975,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:08am
-                    [9] => 0:04.84
+                    [9] => 0:04.83
                     [10] => /System/Library/Image Capture/Support/Image Capture Extension.app/Contents/MacOS/Image Capture Extension -psn_0_110619
                 )
 
-            [46] => Array
+            [56] => Array
                 (
                     [0] => steve
                     [1] => 315
@@ -797,11 +990,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:05am
-                    [9] => 0:07.31
+                    [9] => 0:07.00
                     [10] => /Library/DropboxHelperTools/Dropbox_u501/dbfseventsd 
                 )
 
-            [47] => Array
+            [57] => Array
                 (
                     [0] => root
                     [1] => 314
@@ -812,11 +1005,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:05am
-                    [9] => 0:10.58
+                    [9] => 0:10.12
                     [10] => /Library/DropboxHelperTools/Dropbox_u501/dbfseventsd 
                 )
 
-            [48] => Array
+            [58] => Array
                 (
                     [0] => root
                     [1] => 312
@@ -827,41 +1020,26 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:05am
-                    [9] => 0:04.28
+                    [9] => 0:04.17
                     [10] => /Library/DropboxHelperTools/Dropbox_u501/dbfseventsd 
                 )
 
-            [49] => Array
+            [59] => Array
                 (
                     [0] => steve
                     [1] => 309
                     [2] => 0.0
                     [3] => 0.1
                     [4] => 2505448
-                    [5] => 15520
+                    [5] => 15488
                     [6] => ??
                     [7] => S
                     [8] => 9:05am
-                    [9] => 0:01.28
+                    [9] => 0:01.24
                     [10] => /System/Library/Services/AppleSpell.service/Contents/MacOS/AppleSpell -psn_0_98328
                 )
 
-            [50] => Array
-                (
-                    [0] => steve
-                    [1] => 284
-                    [2] => 0.0
-                    [3] => 0.8
-                    [4] => 784080
-                    [5] => 96644
-                    [6] => ??
-                    [7] => S
-                    [8] => 9:04am
-                    [9] => 6:48.93
-                    [10] => /Applications/Dropbox.app/Contents/MacOS/Dropbox -psn_0_90134
-                )
-
-            [51] => Array
+            [60] => Array
                 (
                     [0] => steve
                     [1] => 282
@@ -872,11 +1050,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:00.49
+                    [9] => 0:00.47
                     [10] => /Applications/Transmit.app/Contents/MacOS/TransmitMenu.app/Contents/MacOS/TransmitMenu -psn_0_77843
                 )
 
-            [52] => Array
+            [61] => Array
                 (
                     [0] => steve
                     [1] => 281
@@ -887,71 +1065,71 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:06.84
+                    [9] => 0:06.70
                     [10] => /Applications/Quicksilver.app/Contents/MacOS/Quicksilver -psn_0_73746
                 )
 
-            [53] => Array
+            [62] => Array
                 (
                     [0] => steve
                     [1] => 280
                     [2] => 0.0
                     [3] => 0.2
                     [4] => 2527528
-                    [5] => 23636
+                    [5] => 23632
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:04.08
+                    [9] => 0:03.74
                     [10] => /Library/PreferencePanes/Growl.prefPane/Contents/Resources/GrowlHelperApp.app/Contents/MacOS/GrowlHelperApp -psn_0_69649
                 )
 
-            [54] => Array
+            [63] => Array
                 (
                     [0] => steve
                     [1] => 277
                     [2] => 0.0
                     [3] => 0.2
                     [4] => 2503112
-                    [5] => 19108
+                    [5] => 19100
                     [6] => ??
                     [7] => Ss
                     [8] => 9:04am
-                    [9] => 0:00.77
+                    [9] => 0:00.76
                     [10] => com.apple.dock.extra 
                 )
 
-            [55] => Array
+            [64] => Array
                 (
                     [0] => steve
                     [1] => 275
                     [2] => 0.0
                     [3] => 0.1
-                    [4] => 724364
-                    [5] => 12600
+                    [4] => 724884
+                    [5] => 12608
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:09.05
+                    [9] => 0:09.04
                     [10] => /Library/Application Support/Adobe/OOBE/PDApp/UWA/AAM Updates Notifier.app/Contents/MacOS/AAM Updates Notifier -psn_0_61455
                 )
 
-            [56] => Array
+            [65] => Array
                 (
                     [0] => steve
                     [1] => 271
                     [2] => 0.0
                     [3] => 0.1
-                    [4] => 2497512
-                    [5] => 8240
+                    [4] => 2498036
+                    [5] => 8252
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:00.23
+                    [9] => 0:00.22
                     [10] => /Library/org.pqrs/KeyRemap4MacBook/app/KeyRemap4MacBook.app/Contents/MacOS/KeyRemap4MacBook -psn_0_57358
                 )
 
-            [57] => Array
+            [66] => Array
                 (
                     [0] => steve
                     [1] => 263
@@ -966,7 +1144,7 @@ stdClass Object
                     [10] => /usr/sbin/pboard 
                 )
 
-            [58] => Array
+            [67] => Array
                 (
                     [0] => steve
                     [1] => 258
@@ -977,11 +1155,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:18.74
+                    [9] => 0:17.61
                     [10] => /Applications/Akamai/netsession_mac_82f378b 
                 )
 
-            [59] => Array
+            [68] => Array
                 (
                     [0] => steve
                     [1] => 257
@@ -992,41 +1170,41 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:52.95
+                    [9] => 0:50.20
                     [10] => /Users/steve/Applications/Akamai/netsession_mac 
                 )
 
-            [60] => Array
+            [69] => Array
                 (
                     [0] => steve
                     [1] => 255
                     [2] => 0.0
                     [3] => 0.0
-                    [4] => 653324
-                    [5] => 3344
+                    [4] => 653844
+                    [5] => 3352
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:01.56
+                    [9] => 0:01.47
                     [10] => /Users/steve/Library/Application Support/Spotify/SpotifyWebHelper
                 )
 
-            [61] => Array
+            [70] => Array
                 (
                     [0] => steve
                     [1] => 251
                     [2] => 0.0
                     [3] => 0.3
-                    [4] => 2555140
-                    [5] => 41728
+                    [4] => 2555664
+                    [5] => 41740
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:06.77
+                    [9] => 0:06.38
                     [10] => /Library/org.pqrs/KeyRemap4MacBook/app/KeyRemap4MacBook_server.app/Contents/MacOS/KeyRemap4MacBook_server /tmp/KeyRemap4MacBook_server.501.7k8cUsqH
                 )
 
-            [62] => Array
+            [71] => Array
                 (
                     [0] => steve
                     [1] => 250
@@ -1041,7 +1219,7 @@ stdClass Object
                     [10] => /System/Library/CoreServices/AirPort Base Station Agent.app/Contents/MacOS/AirPort Base Station Agent -launchd -allowquit
                 )
 
-            [63] => Array
+            [72] => Array
                 (
                     [0] => steve
                     [1] => 245
@@ -1052,11 +1230,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:00.90
+                    [9] => 0:00.89
                     [10] => /System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/imagent 
                 )
 
-            [64] => Array
+            [73] => Array
                 (
                     [0] => steve
                     [1] => 241
@@ -1071,67 +1249,52 @@ stdClass Object
                     [10] => /usr/libexec/warmd_agent 
                 )
 
-            [65] => Array
+            [74] => Array
                 (
                     [0] => steve
                     [1] => 238
                     [2] => 0.0
                     [3] => 0.1
-                    [4] => 2518180
-                    [5] => 7016
+                    [4] => 2518704
+                    [5] => 7036
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:04.14
+                    [9] => 0:04.06
                     [10] => /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd 
                 )
 
-            [66] => Array
+            [75] => Array
                 (
                     [0] => steve
                     [1] => 234
                     [2] => 0.0
                     [3] => 0.8
-                    [4] => 2701252
-                    [5] => 102368
+                    [4] => 2703324
+                    [5] => 102532
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 17:17.76
+                    [9] => 16:51.51
                     [10] => /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder 
                 )
 
-            [67] => Array
+            [76] => Array
                 (
                     [0] => steve
                     [1] => 233
                     [2] => 0.0
                     [3] => 0.2
                     [4] => 2556328
-                    [5] => 25596
+                    [5] => 25608
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:18.87
+                    [9] => 0:18.02
                     [10] => /System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer 
                 )
 
-            [68] => Array
-                (
-                    [0] => steve
-                    [1] => 232
-                    [2] => 0.0
-                    [3] => 0.6
-                    [4] => 2622644
-                    [5] => 73020
-                    [6] => ??
-                    [7] => S
-                    [8] => 9:04am
-                    [9] => 0:26.23
-                    [10] => /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock 
-                )
-
-            [69] => Array
+            [77] => Array
                 (
                     [0] => steve
                     [1] => 231
@@ -1142,26 +1305,26 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:00.38
+                    [9] => 0:00.36
                     [10] => /System/Library/CoreServices/talagent 
                 )
 
-            [70] => Array
+            [78] => Array
                 (
                     [0] => steve
                     [1] => 226
                     [2] => 0.0
                     [3] => 0.0
-                    [4] => 2470600
-                    [5] => 4672
+                    [4] => 2469552
+                    [5] => 4648
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:02.66
+                    [9] => 0:02.37
                     [10] => /usr/sbin/distnoted agent
                 )
 
-            [71] => Array
+            [79] => Array
                 (
                     [0] => steve
                     [1] => 224
@@ -1172,11 +1335,11 @@ stdClass Object
                     [6] => ??
                     [7] => S
                     [8] => 9:04am
-                    [9] => 0:00.75
+                    [9] => 0:00.74
                     [10] => /usr/libexec/UserEventAgent -l Aqua
                 )
 
-            [72] => Array
+            [80] => Array
                 (
                     [0] => steve
                     [1] => 221
@@ -1187,11 +1350,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:04am
-                    [9] => 0:03.02
+                    [9] => 0:02.93
                     [10] => /sbin/launchd 
                 )
 
-            [73] => Array
+            [81] => Array
                 (
                     [0] => root
                     [1] => 213
@@ -1206,7 +1369,7 @@ stdClass Object
                     [10] => /System/Library/CoreServices/logind 
                 )
 
-            [74] => Array
+            [82] => Array
                 (
                     [0] => root
                     [1] => 200
@@ -1221,7 +1384,7 @@ stdClass Object
                     [10] => /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMServer 
                 )
 
-            [75] => Array
+            [83] => Array
                 (
                     [0] => root
                     [1] => 86
@@ -1232,11 +1395,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.32
+                    [9] => 0:00.31
                     [10] => /usr/sbin/aosnotifyd 
                 )
 
-            [76] => Array
+            [84] => Array
                 (
                     [0] => root
                     [1] => 85
@@ -1247,11 +1410,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:01.49
+                    [9] => 0:01.48
                     [10] => /System/Library/PrivateFrameworks/ApplePushService.framework/applepushserviced 
                 )
 
-            [77] => Array
+            [85] => Array
                 (
                     [0] => root
                     [1] => 83
@@ -1266,7 +1429,7 @@ stdClass Object
                     [10] => autofsd 
                 )
 
-            [78] => Array
+            [86] => Array
                 (
                     [0] => root
                     [1] => 78
@@ -1281,22 +1444,7 @@ stdClass Object
                     [10] => /sbin/dynamic_pager -F /private/var/vm/swapfile
                 )
 
-            [79] => Array
-                (
-                    [0] => root
-                    [1] => 76
-                    [2] => 0.0
-                    [3] => 0.0
-                    [4] => 2468228
-                    [5] => 1732
-                    [6] => ??
-                    [7] => Ss
-                    [8] => 9:03am
-                    [9] => 1:46.18
-                    [10] => /usr/libexec/hidd 
-                )
-
-            [80] => Array
+            [87] => Array
                 (
                     [0] => root
                     [1] => 74
@@ -1311,7 +1459,7 @@ stdClass Object
                     [10] => /System/Library/PrivateFrameworks/Heimdal.framework/Helpers/kdc 
                 )
 
-            [81] => Array
+            [88] => Array
                 (
                     [0] => root
                     [1] => 73
@@ -1322,26 +1470,41 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.15
+                    [9] => 0:00.14
                     [10] => /usr/sbin/KernelEventAgent 
                 )
 
-            [82] => Array
+            [89] => Array
+                (
+                    [0] => steve
+                    [1] => 71
+                    [2] => 0.0
+                    [3] => 0.1
+                    [4] => 2517124
+                    [5] => 17728
+                    [6] => ??
+                    [7] => Ss
+                    [8] => 9:03am
+                    [9] => 0:06.05
+                    [10] => /System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow console
+                )
+
+            [90] => Array
                 (
                     [0] => root
                     [1] => 69
                     [2] => 0.0
                     [3] => 1.3
-                    [4] => 3422024
-                    [5] => 159020
+                    [4] => 3423492
+                    [5] => 163384
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 3:25.83
+                    [9] => 3:17.43
                     [10] => /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Support/mds 
                 )
 
-            [83] => Array
+            [91] => Array
                 (
                     [0] => _netbios
                     [1] => 68
@@ -1352,11 +1515,11 @@ stdClass Object
                     [6] => ??
                     [7] => SNs
                     [8] => 9:03am
-                    [9] => 0:09.78
+                    [9] => 0:09.45
                     [10] => /usr/sbin/netbiosd 
                 )
 
-            [84] => Array
+            [92] => Array
                 (
                     [0] => root
                     [1] => 65
@@ -1367,11 +1530,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.14
+                    [9] => 0:00.13
                     [10] => /usr/libexec/ptmd 
                 )
 
-            [85] => Array
+            [93] => Array
                 (
                     [0] => root
                     [1] => 64
@@ -1386,7 +1549,7 @@ stdClass Object
                     [10] => /System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/Support/revisiond 
                 )
 
-            [86] => Array
+            [94] => Array
                 (
                     [0] => root
                     [1] => 62
@@ -1397,11 +1560,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.12
+                    [9] => 0:00.11
                     [10] => /usr/libexec/stackshot -t
                 )
 
-            [87] => Array
+            [95] => Array
                 (
                     [0] => root
                     [1] => 60
@@ -1416,7 +1579,7 @@ stdClass Object
                     [10] => /sbin/SystemStarter 
                 )
 
-            [88] => Array
+            [96] => Array
                 (
                     [0] => _usbmuxd
                     [1] => 58
@@ -1427,11 +1590,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:01.53
+                    [9] => 0:01.43
                     [10] => /System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/usbmuxd -launchd
                 )
 
-            [89] => Array
+            [97] => Array
                 (
                     [0] => nobody
                     [1] => 57
@@ -1442,11 +1605,11 @@ stdClass Object
                     [6] => ??
                     [7] => SNs
                     [8] => 9:03am
-                    [9] => 0:00.28
+                    [9] => 0:00.27
                     [10] => /usr/libexec/warmd 
                 )
 
-            [90] => Array
+            [98] => Array
                 (
                     [0] => root
                     [1] => 55
@@ -1457,71 +1620,71 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:01.72
+                    [9] => 0:01.62
                     [10] => /usr/sbin/ntpd -c /private/etc/ntp-restrict.conf -n -g -p /var/run/ntpd.pid -f /var/db/ntp.drift
                 )
 
-            [91] => Array
+            [99] => Array
                 (
                     [0] => root
                     [1] => 27
                     [2] => 0.0
                     [3] => 0.2
-                    [4] => 2514196
-                    [5] => 23688
+                    [4] => 2513692
+                    [5] => 23696
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:36.61
+                    [9] => 0:31.59
                     [10] => /System/Library/CoreServices/coreservicesd 
                 )
 
-            [92] => Array
+            [100] => Array
                 (
                     [0] => root
                     [1] => 23
                     [2] => 0.0
                     [3] => 0.1
-                    [4] => 2488452
-                    [5] => 8428
+                    [4] => 2488976
+                    [5] => 8444
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.90
+                    [9] => 0:00.88
                     [10] => /usr/sbin/securityd -i
                 )
 
-            [93] => Array
+            [101] => Array
                 (
                     [0] => root
                     [1] => 21
                     [2] => 0.0
                     [3] => 0.0
-                    [4] => 2484908
-                    [5] => 3996
+                    [4] => 2484384
+                    [5] => 3984
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.47
+                    [9] => 0:00.46
                     [10] => /usr/sbin/blued 
                 )
 
-            [94] => Array
+            [102] => Array
                 (
                     [0] => root
                     [1] => 20
                     [2] => 0.0
                     [3] => 0.0
-                    [4] => 2467832
+                    [4] => 2467308
                     [5] => 1760
                     [6] => ??
-                    [7] => Us
+                    [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.18
+                    [9] => 0:00.17
                     [10] => /usr/sbin/distnoted daemon
                 )
 
-            [95] => Array
+            [103] => Array
                 (
                     [0] => root
                     [1] => 19
@@ -1532,11 +1695,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.55
+                    [9] => 0:00.54
                     [10] => /System/Library/CoreServices/powerd.bundle/powerd 
                 )
 
-            [96] => Array
+            [104] => Array
                 (
                     [0] => root
                     [1] => 18
@@ -1547,11 +1710,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.48
+                    [9] => 0:00.45
                     [10] => /usr/sbin/syslogd 
                 )
 
-            [97] => Array
+            [105] => Array
                 (
                     [0] => root
                     [1] => 17
@@ -1562,11 +1725,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:01.54
+                    [9] => 0:01.50
                     [10] => /usr/libexec/configd 
                 )
 
-            [98] => Array
+            [106] => Array
                 (
                     [0] => root
                     [1] => 16
@@ -1577,56 +1740,56 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.23
+                    [9] => 0:00.22
                     [10] => /usr/sbin/diskarbitrationd 
                 )
 
-            [99] => Array
+            [107] => Array
                 (
                     [0] => root
                     [1] => 15
                     [2] => 0.0
                     [3] => 0.0
                     [4] => 2455276
-                    [5] => 1336
+                    [5] => 1340
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:03.85
+                    [9] => 0:03.70
                     [10] => /usr/sbin/notifyd 
                 )
 
-            [100] => Array
+            [108] => Array
                 (
                     [0] => root
                     [1] => 14
                     [2] => 0.0
                     [3] => 0.1
-                    [4] => 2532416
-                    [5] => 8532
+                    [4] => 2531892
+                    [5] => 8520
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:22.54
+                    [9] => 0:21.42
                     [10] => /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/Support/fseventsd 
                 )
 
-            [101] => Array
+            [109] => Array
                 (
                     [0] => root
                     [1] => 13
                     [2] => 0.0
                     [3] => 0.1
                     [4] => 2490084
-                    [5] => 8756
+                    [5] => 8776
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:10.44
+                    [9] => 0:10.12
                     [10] => /usr/libexec/opendirectoryd 
                 )
 
-            [102] => Array
+            [110] => Array
                 (
                     [0] => _mdnsresponder
                     [1] => 12
@@ -1637,11 +1800,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:04.48
+                    [9] => 0:04.33
                     [10] => /usr/sbin/mDNSResponder -launchd
                 )
 
-            [103] => Array
+            [111] => Array
                 (
                     [0] => root
                     [1] => 11
@@ -1652,11 +1815,11 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:00.41
+                    [9] => 0:00.40
                     [10] => /usr/libexec/UserEventAgent -l System
                 )
 
-            [104] => Array
+            [112] => Array
                 (
                     [0] => root
                     [1] => 10
@@ -1667,172 +1830,232 @@ stdClass Object
                     [6] => ??
                     [7] => Ss
                     [8] => 9:03am
-                    [9] => 0:01.39
+                    [9] => 0:01.38
                     [10] => /usr/libexec/kextd 
                 )
 
-            [105] => Array
-                (
-                    [0] => root
-                    [1] => 11272
-                    [2] => 0.0
-                    [3] => 0.0
-                    [4] => 2434820
-                    [5] => 576
-                    [6] => s001
-                    [7] => R+
-                    [8] => 7:01pm
-                    [9] => 0:00.00
-                    [10] => ps auxww
-                )
-
-            [106] => Array
+            [113] => Array
                 (
                     [0] => root
                     [1] => 1
                     [2] => 0.0
                     [3] => 0.0
-                    [4] => 2475376
-                    [5] => 1776
+                    [4] => 2475384
+                    [5] => 1784
                     [6] => ??
                     [7] => Ss
                     [8] => 9:02am
-                    [9] => 0:56.57
+                    [9] => 0:52.92
                     [10] => /sbin/launchd 
-                )
-
-            [107] => Array
-                (
-                    [0] => steve
-                    [1] => 11271
-                    [2] => 0.0
-                    [3] => 0.0
-                    [4] => 0
-                    [5] => 0
-                    [6] => s001
-                    [7] => ?+
-                    [8] => 7:01pm
-                    [9] => 0:00.00
-                    [10] => (netstat) 
-                )
-
-            [108] => Array
-                (
-                    [0] => root
-                    [1] => 11270
-                    [2] => 0.0
-                    [3] => 0.0
-                    [4] => 2435164
-                    [5] => 896
-                    [6] => s001
-                    [7] => R+
-                    [8] => 7:01pm
-                    [9] => 0:00.02
-                    [10] => top -l 1
-                )
-
-            [109] => Array
-                (
-                    [0] => root
-                    [1] => 11256
-                    [2] => 0.0
-                    [3] => 0.0
-                    [4] => 2467568
-                    [5] => 2132
-                    [6] => s001
-                    [7] => Ss
-                    [8] => 6:54pm
-                    [9] => 0:00.21
-                    [10] => login -pfl steve /bin/bash -c exec -la bash /bin/bash
-                )
-
-            [110] => Array
-                (
-                    [0] => steve
-                    [1] => 11255
-                    [2] => 0.0
-                    [3] => 0.0
-                    [4] => 2435188
-                    [5] => 2024
-                    [6] => s002
-                    [7] => S+
-                    [8] => 6:53pm
-                    [9] => 0:00.29
-                    [10] => ssh admin@cheetara.vm.newicon.net
-                )
-
-            [111] => Array
-                (
-                    [0] => steve
-                    [1] => 11252
-                    [2] => 0.0
-                    [3] => 0.0
-                    [4] => 2435492
-                    [5] => 1156
-                    [6] => s002
-                    [7] => S
-                    [8] => 6:53pm
-                    [9] => 0:00.01
-                    [10] => -bash 
-                )
-
-            [112] => Array
-                (
-                    [0] => root
-                    [1] => 11251
-                    [2] => 0.0
-                    [3] => 0.0
-                    [4] => 2468592
-                    [5] => 2196
-                    [6] => s002
-                    [7] => Ss
-                    [8] => 6:53pm
-                    [9] => 0:00.21
-                    [10] => login -pfl steve /bin/bash -c exec -la bash /bin/bash
-                )
-
-            [113] => Array
-                (
-                    [0] => steve
-                    [1] => 11250
-                    [2] => 0.0
-                    [3] => 0.7
-                    [4] => 2866648
-                    [5] => 83008
-                    [6] => s000
-                    [7] => S+
-                    [8] => 6:53pm
-                    [9] => 0:04.71
-                    [10] => /usr/bin/java -jar ./winstone-0.9.10.jar --httpPort=8080 --ajp13Port=-1 --warfile=./mViewer.war
                 )
 
             [114] => Array
                 (
-                    [0] => steve
-                    [1] => 11249
+                    [0] => root
+                    [1] => 11026
                     [2] => 0.0
                     [3] => 0.0
-                    [4] => 2435488
-                    [5] => 884
-                    [6] => s000
-                    [7] => S+
-                    [8] => 6:53pm
+                    [4] => 2434820
+                    [5] => 580
+                    [6] => s005
+                    [7] => R+
+                    [8] => 6:24pm
                     [9] => 0:00.00
-                    [10] => /bin/bash ./start_mViewer.sh
+                    [10] => ps auxww
                 )
 
             [115] => Array
                 (
                     [0] => steve
-                    [1] => 11245
+                    [1] => 11025
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 0
+                    [5] => 0
+                    [6] => s005
+                    [7] => Z+
+                    [8] => 6:24pm
+                    [9] => 0:00.00
+                    [10] => (netstat) 
+                )
+
+            [116] => Array
+                (
+                    [0] => root
+                    [1] => 11024
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2435164
+                    [5] => 884
+                    [6] => s005
+                    [7] => R+
+                    [8] => 6:24pm
+                    [9] => 0:00.02
+                    [10] => top -l 1
+                )
+
+            [117] => Array
+                (
+                    [0] => steve
+                    [1] => 10986
+                    [2] => 0.0
+                    [3] => 0.4
+                    [4] => 846456
+                    [5] => 49516
+                    [6] => ??
+                    [7] => U
+                    [8] => 6:24pm
+                    [9] => 0:01.36
+                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.87.1647665745
+                )
+
+            [118] => Array
+                (
+                    [0] => root
+                    [1] => 10980
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2463240
+                    [5] => 1580
+                    [6] => ??
+                    [7] => Ss
+                    [8] => 6:24pm
+                    [9] => 0:00.01
+                    [10] => /usr/sbin/ocspd 
+                )
+
+            [119] => Array
+                (
+                    [0] => steve
+                    [1] => 9303
+                    [2] => 0.0
+                    [3] => 0.3
+                    [4] => 3059216
+                    [5] => 39804
+                    [6] => s005
+                    [7] => R+
+                    [8] => 5:59pm
+                    [9] => 0:15.63
+                    [10] => node nimon
+                )
+
+            [120] => Array
+                (
+                    [0] => _spotlight
+                    [1] => 8694
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2468528
+                    [5] => 1236
+                    [6] => ??
+                    [7] => S
+                    [8] => 5:46pm
+                    [9] => 0:00.01
+                    [10] => /usr/sbin/distnoted agent
+                )
+
+            [121] => Array
+                (
+                    [0] => _spotlight
+                    [1] => 8693
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2491004
+                    [5] => 6076
+                    [6] => ??
+                    [7] => SN
+                    [8] => 5:46pm
+                    [9] => 0:00.19
+                    [10] => /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.pool.0
+                )
+
+            [122] => Array
+                (
+                    [0] => _spotlight
+                    [1] => 8691
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2466492
+                    [5] => 840
+                    [6] => ??
+                    [7] => Ss
+                    [8] => 5:46pm
+                    [9] => 0:00.01
+                    [10] => /sbin/launchd 
+                )
+
+            [123] => Array
+                (
+                    [0] => steve
+                    [1] => 7357
+                    [2] => 0.0
+                    [3] => 0.3
+                    [4] => 833360
+                    [5] => 37016
+                    [6] => ??
+                    [7] => S
+                    [8] => 4:46pm
+                    [9] => 0:09.61
+                    [10] => /Applications/Google Chrome.app/Contents/Versions/23.0.1271.26/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=en-US --force-fieldtrials=AsyncDns/disabled/ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/ForceCompositingMode/disable/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/InfiniteCache/No/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/0/OneClickSignIn/BlueOnWhite/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V2/SpdyCwnd/cwndMin16/SpeculativePrefetchingLearning/SpeculativePrefetchingDisabled/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_16/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/group_08/UMA-Uniformity-Trial-20-Percent/group_02/UMA-Uniformity-Trial-5-Percent/group_04/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --disable-client-side-phishing-detection --renderer-print-preview --disable-accelerated-video-decode --channel=390.79.2005105459
+                )
+
+            [124] => Array
+                (
+                    [0] => steve
+                    [1] => 7341
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2435188
+                    [5] => 2024
+                    [6] => s001
+                    [7] => S+
+                    [8] => 4:08pm
+                    [9] => 0:00.25
+                    [10] => ssh admin@cheetara.vm.newicon.net
+                )
+
+            [125] => Array
+                (
+                    [0] => steve
+                    [1] => 4117
                     [2] => 0.0
                     [3] => 0.0
                     [4] => 2435492
-                    [5] => 1188
-                    [6] => s000
+                    [5] => 1168
+                    [6] => s005
                     [7] => S
-                    [8] => 6:52pm
-                    [9] => 0:00.01
+                    [8] => 3:17pm
+                    [9] => 0:00.07
+                    [10] => -bash 
+                )
+
+            [126] => Array
+                (
+                    [0] => root
+                    [1] => 4116
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2459376
+                    [5] => 2120
+                    [6] => s005
+                    [7] => Ss
+                    [8] => 3:17pm
+                    [9] => 0:00.22
+                    [10] => login -pfl steve /bin/bash -c exec -la bash /bin/bash
+                )
+
+            [127] => Array
+                (
+                    [0] => steve
+                    [1] => 3061
+                    [2] => 0.0
+                    [3] => 0.0
+                    [4] => 2435492
+                    [5] => 1164
+                    [6] => s001
+                    [7] => S
+                    [8] => 3:00pm
+                    [9] => 0:00.04
                     [10] => -bash 
                 )
 
@@ -1840,8 +2063,8 @@ stdClass Object
 
     [memory] => stdClass Object
         (
-            [physUsed] => 5325
-            [physFree] => 6961
+            [physUsed] => 5411
+            [physFree] => 6875
             [swapUsed] => 0.00
             [swapFree] => 64.00
             [cached] => NULL
