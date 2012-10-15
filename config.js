@@ -1,4 +1,4 @@
-var config={nimon:{},mysql:{},apache:{}};
+var config={nimon:{},mysql:{},apache:{},mongodb:{}};
 
 
 // the device name, the human readable name of this device or server
