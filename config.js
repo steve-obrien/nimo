@@ -22,6 +22,9 @@ config.mysql.slave = true;
 // the apache server status url
 config.apache.statusUrl = 'http://127.0.0.1/server-status?auto';
 
+// Mongo Db logging!
+config.mongodb.server = '';
+
 // logging level, options: 'debug' or 'normal'
 config.logging = 'default';
 
