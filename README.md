@@ -1,4 +1,4 @@
-nimon
+Nimon
 =====
 
 Nimon the deamon! Nimon is a server monitoring tool. It periodically polls the system and posts 
@@ -19,8 +19,7 @@ For Debian Squeeze, your best bet is to compile node by yourself (as root):
     ./configure
     make install
 
-### 2. On the server you wish to monitor go to the directory you wish to install nimon then:
-
+### 2. On the server you wish to monitor, go to the directory you wish to install nimon then:
 
     git clone git@git.newicon.net:nimon
     cd nimon
@@ -30,9 +29,9 @@ For Debian Squeeze, your best bet is to compile node by yourself (as root):
 To setup mysql moitoring you will have to put your mysql username and password details into the config file
 inside the nimon directory:
 
-    nano config/default.yaml 
+    nano config/config.js 
 
 ### 4. Run nimon
 
-    node nimon &
+    node nimon & // Note: Todo: this forks as a separate processes but does not run as a deamon process as it should.
 
