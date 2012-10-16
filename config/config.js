@@ -1,14 +1,14 @@
-var config={nimon:{},mysql:{},apache:{},mongodb:{}};
+var config={mysql:{},apache:{},mongodb:{}};
 
 
 // the device name, the human readable name of this device or server
-config.nimon.device = '';
+config.device = '';
 // ?? key ?? your api key to identify you as a cutomer... todo
-config.nimon.key = '???';
+config.key = '???';
 // url to the monitoring service
-config.nimon.url = 'http://127.0.0.1/nii/public/htdocs/hosting/server/monitor';
+config.url = 'http://127.0.0.1/nii/public/htdocs/hosting/server/monitor';
 // The polling frequency in seconds
-config.nimon.pollFreq = 5; 
+config.pollFreq = 5; 
  
 
 // mysql settings
