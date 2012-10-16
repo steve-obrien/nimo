@@ -7,17 +7,9 @@ stats on server performance to a server monitoring application
 Install
 =======
 
+Nimo is a node js package. It only requires node to be installed with its package manager npm (which is included by default)
+
 ### 1. install node http://nodejs.org/download/
-
-Taken from the docs:
-For Debian Squeeze, your best bet is to compile node by yourself (as root):
-
-    apt-get install python g++ make
-    mkdir ~/nodejs && cd $_
-    wget -N http://nodejs.org/dist/node-latest.tar.gz
-    tar xzvf node-latest.tar.gz && cd `ls -rd node-v*`
-    ./configure
-    make install
 
 ### 2. On the server you wish to monitor, go to the directory you wish to install nimon then:
 
@@ -34,4 +26,3 @@ inside the nimon directory:
 ### 4. Run nimon
 
     node nimon & // Note: Todo: this forks as a separate processes but does not run as a deamon process as it should.
-
