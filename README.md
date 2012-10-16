@@ -1,7 +1,7 @@
-Nimon
+Nimo
 =====
 
-Nimon the deamon! Nimon is a server monitoring tool. It periodically polls the system and posts 
+Nimo the Deamon! Nimo is a server monitoring tool. It periodically polls the system and posts 
 stats on server performance to a server monitoring application
 
 Install
