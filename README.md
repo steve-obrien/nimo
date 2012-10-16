@@ -17,7 +17,7 @@ Otherwise: http://nodejs.org/download/
 
 ### 2. On the server you wish to monitor, go to the directory you wish to install nimon then:
 
-    git clone git@git.newicon.net:nimon
+    git clone git://github.com/steve-obrien/nimo.git
     cd nimon
     npm install
 
