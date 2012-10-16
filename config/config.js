@@ -8,7 +8,7 @@ config.key = '???';
 // url to the monitoring service
 config.url = 'http://127.0.0.1/nii/public/htdocs/hosting/server/monitor';
 // The polling frequency in seconds
-config.pollFreq = 5; 
+config.pollFreq = 60; 
  
 
 // mysql settings
