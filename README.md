@@ -27,7 +27,7 @@ Directly from the docs:
 ### 2. On the server you wish to monitor, go to the directory you wish to install nimon then:
 
     git clone git://github.com/steve-obrien/nimo.git
-    cd nimon
+    cd nimo
     npm install
 
 ### 3. Configure nimon for your device. 
@@ -38,4 +38,15 @@ inside the nimon directory:
 
 ### 4. Run nimon
 
-    node nimon & // Note: Todo: this forks as a separate processes but does not run as a deamon process as it should.
+    node nimo & // Note: Todo: this forks as a separate processes but does not run as a deamon process as it should.
+
+
+
+Alternatively you can install the forever node package. 
+
+    sudo npm install forever -g
+
+This installs forever globally, we can then run nimo as a deamon by running this command
+
+    forever start ./nimo.js
+
