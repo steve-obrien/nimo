@@ -14,6 +14,15 @@ Nimo is a node js package. It only requires node to be installed with its packag
 For debian follow the instructions here: https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 Otherwise: http://nodejs.org/download/ 
 
+Directly from the docs:
+
+    apt-get install python g++ make
+    mkdir ~/nodejs && cd $_
+    wget -N http://nodejs.org/dist/node-latest.tar.gz
+    tar xzvf node-latest.tar.gz && cd `ls -rd node-v*`
+    ./configure
+    make install
+
 
 ### 2. On the server you wish to monitor, go to the directory you wish to install nimon then:
 
