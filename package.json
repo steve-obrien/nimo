@@ -1,7 +1,9 @@
 {
   "name": "Nimon",
-  "description": "Nimon the deamon! Deamon to post out server stats!",
-  "version": "0.0.1",
+  "description": "Nimon the deamon! Deamon to gather server stats, disk useage, load averages, processes, mysql stats, etc, and post frequently to a server monitoring tool!",
+  "version": "0.1.2",
+  "maintainers":["Steve O'Brien <steve.obrien@newicon.net>"],
+  "keywords":["server monitoring"],
   "private": true,
   "dependencies": {
     "async":"0.1.22",
