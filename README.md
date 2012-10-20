@@ -1,8 +1,8 @@
 Nimo
 =====
 
-Nimo the Deamon! Nimo is a server monitoring tool. It periodically polls the system and posts 
-stats on server performance to a server monitoring application
+Nimo is a server monitoring tool. It periodically polls the system and posts 
+stats on server performance to a server monitoring application, supported platforms: mac, linux and free-bsd
 
 Install
 =======
@@ -15,18 +15,18 @@ For debian follow the instructions here: https://github.com/joyent/node/wiki/Ins
 Otherwise: http://nodejs.org/download/ 
 
 
-### 2. On the server you wish to monitor, go to the directory you wish to install nimon then:
+### 2. On the server you wish to monitor, go to the directory you wish to install nimo then:
 
     git clone git://github.com/steve-obrien/nimo.git
-    cd nimon
+    cd nimo
     npm install
 
-### 3. Configure nimon for your device. 
+### 3. Configure nimo for your device. 
 To setup mysql moitoring you will have to put your mysql username and password details into the config file
-inside the nimon directory:
+inside the nimo directory:
 
     nano config/config.js 
 
-### 4. Run nimon
+### 4. Run nimo
 
-    node nimon & // Note: Todo: this forks as a separate processes but does not run as a deamon process as it should.
+    node nimo & // Note: Todo: this forks as a separate processes but does not run as a deamon process as it should.
