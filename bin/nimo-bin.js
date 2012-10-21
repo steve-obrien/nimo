@@ -97,7 +97,7 @@ program
 				console.log('Nimo is already running.');
 			} else {
 				forever.startDaemon(script);
-				console.log('Nimo is running. Relax and whatch those stats!');
+				console.log('Nimo is running. Relax and whatch those stats! For extra info run "nimo show"');
 			}
 		});
 		
