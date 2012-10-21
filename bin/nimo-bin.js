@@ -15,7 +15,7 @@ var fs = require('fs');
 /**
  * Store the script name to run
  */
-var script = '../nimo.js';
+var script = __dirname + '/../nimo.js';
 
 function configure() {
 	program.confirm('Would you like to configure Nimo now? ', function(ok){

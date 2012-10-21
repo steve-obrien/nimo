@@ -1,7 +1,7 @@
 {
   "name": "nimo",
   "description": "Nimon the deamon! Deamon to gather server stats, disk useage, load averages, processes, mysql stats, etc, and post frequently to a server monitoring tool!",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Newicon Ltd - Steve O'Brien <steve.obrien@newicon.net>",
   "maintainers":["Steve O'Brien <steve.obrien@newicon.net>"],
   "repository": {
