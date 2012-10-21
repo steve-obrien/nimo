@@ -6,17 +6,19 @@ config.device = '';
 // ?? key ?? your api key to identify you as a cutomer... todo
 config.key = '???';
 // url to the monitoring service
-config.url = 'http://127.0.0.1/nii/public/htdocs/hosting/server/monitor';
+config.url = 'http://hub.newicon.net/hosting/server/monitor';
 // The polling frequency in seconds
 config.pollFreq = 60; 
  
 
 // mysql settings
+config.mysql.monitor = true;
 config.mysql.host = 'localhost';
-config.mysql.user = 'root';
+config.mysql.user = '?';
 config.mysql.password = '';
-// whether to log mysql slave status true | false
-config.mysql.slave = true;
+// whether to log mysql slave status true | false only necessary if you have 
+// slave database configured
+config.mysql.slave = false;
 
 
 // the apache server status url
@@ -26,6 +28,6 @@ config.apache.statusUrl = 'http://127.0.0.1/server-status?auto';
 config.mongodb.server = '';
 
 // logging level, options: 'debug' or 'normal'
-config.logging = 'default';
+config.logging = 'normal';
 
 module.exports = config;
