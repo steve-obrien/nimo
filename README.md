@@ -50,3 +50,15 @@ This installs forever globally, we can then run nimo as a deamon by running this
 
     forever start ./nimo.js
 
+
+## Install - cli
+
+Install Nimo globally
+
+    npm install nimo -g
+
+Then:
+    
+    nimo --help
+
+    nimo start
