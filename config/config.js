@@ -12,7 +12,7 @@ config.pollFreq = 60;
  
 
 // mysql settings
-config.mysql.monitor = true;
+config.mysql.monitor = false;
 config.mysql.host = 'localhost';
 config.mysql.user = '?';
 config.mysql.password = '';
