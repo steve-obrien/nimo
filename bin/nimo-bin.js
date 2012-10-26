@@ -6,11 +6,11 @@ var agent = require('../lib/agent');
 var _ = require('underscore');
 var forever = require('forever');
 var program = require('commander');
-var config = require('../config/config.js');
-var conf = require('../config/conf.json');
 var colors = require('colors');
 var pkg = require('../package.json');
 var fs = require('fs');
+
+var config = _.extend(require('../config/default.js'), require('../config/config.json'));
 
 /**
  * Store the script name to run
@@ -34,12 +34,13 @@ function configure() {
 					conf.mysql.user = mysqlUser;
 					program.prompt('Enter Mysql password: ', function(mysqlPassword){
 						conf.mysql.password = mysqlPassword || '';
-						program.confirm('Monito mysql slave db? ', function(ok){
+						program.confirm('Monitor mysql slave db? ', function(ok){
 
 							conf.mysql.slave = ok;
 
-							fs.writeFile('../config/conf.json', JSON.stringify(conf, null, 2), function (err) {
+							fs.writeFile(__dirname+'/../config/config.json', JSON.stringify(conf, null, 2), function (err) {
 								if (err) throw err;
+								config = _.extend(config, conf);
 								console.log('It\'s saved!');
 							});
 
