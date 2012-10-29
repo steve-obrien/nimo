@@ -54,7 +54,7 @@ function configure() {
 	});
 }
 
-function findingNimo(callback) {
+function findingNimo (callback) {
 	forever.list(false,  function(n, data){
 		if (data === null) {
 			callback(false);
@@ -65,6 +65,17 @@ function findingNimo(callback) {
 			callback(found);
 		}
 	})
+}
+
+function start () {
+	findingNimo(function(found){
+		if (found) {
+			console.log('Nimo is already running.');
+		} else {
+			forever.startDaemon(script);
+			console.log('Nimo started. ' + 'Relax and whatch those stats! For extra info run "nimo show"'.cyan);
+		}
+	});
 }
 
 program
@@ -87,33 +98,61 @@ program
 	.action(function(){
 		configure();
 	});
+	
+program
+	.command('config')
+	.description('Show the current configuration settings for Nimo')
+	.action(function(){
+		console.log('Nimo:'.bold);
+		console.log('    url      : '.grey + config.url)
+		
+		console.log('MySQL Settings:'.bold);
+		if (config.mysql.monitor) {
+			console.log('    monitor  : '.grey + config.mysql.monitor)
+			console.log('    host     : '.grey + config.mysql.host)
+			console.log('    user     : '.grey + config.mysql.user)
+			console.log('    password : '.grey + config.mysql.password)
+			console.log('    slave    : '.grey + config.mysql.slave)
+		} else {
+			console.log('    monitor     : '.grey + config.mysql.monitor)
+		}
+	});
 
 program
 	.command('start')
 	.description('start Nimo deamon process')
 	.action(function(){
-		
-		findingNimo(function(found){
-			if (found) {
-				console.log('Nimo is already running.');
-			} else {
-				forever.startDaemon(script);
-				console.log('Nimo is running. Relax and whatch those stats! For extra info run "nimo show"');
-			}
-		});
-		
+		start();
 	 });
 
 program
 	.command('stop')
 	.description('Stop the Nimo deamon')
 	.action(function(){
+		findingNimo(function(found){
+			if (found) {
+				forever.stop(script).on('stop',  function(){console.log('Nimo stopped.');});
+			} else {
+				console.log('Nimo is not currently running.');
+			}
+		})
+	});
+	
+program
+	.command('restart')
+	.description('Restart the Nimo deamon')
+	.action(function(){
 		
 		findingNimo(function(found){
 			if (found) {
-				forever.stop(script);
+				forever.stop(script).on('stop', function(){
+					console.log('Nimo stopped.');
+					setTimeout(function(){console.log('Starting...'.cyan)}, 500);
+					setTimeout(start, 1000);
+				});
 			} else {
-				console.log('Nimo is not currently running.');
+				console.log('Nimo is not currently running. Starting...');
+				start();
 			}
 		})
 		
@@ -132,19 +171,6 @@ program
 		})
 	});
 
-program
-	.command('config')
-	.description('Show the current configuration settings for Nimo')
-	.action(function(){
-		console.log('Nimo:'.bold);
-		console.log('    url      : '.grey + config.url)
-		console.log('MySQL Settings:'.bold);
-		console.log('    host     : '.grey + config.mysql.host)
-		console.log('    user     : '.grey + config.mysql.user)
-		console.log('    password : '.grey + config.mysql.password)
-		console.log('    slave    : '.grey + config.mysql.slave)
-	});
-	
 program
 	.command('*')
 	.action(function(){
