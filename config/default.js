@@ -4,7 +4,7 @@ var configDefault = {
 	// ?? key ?? your api key to identify you as a cutomer... todo
 	key : '???', 
 	// url to the monitoring service
-	url : 'http://hub.newicon.net/hosting/server/monitor',
+	url : 'http://server.app.newicon.net/servermon/server/monitor',
 	// The polling frequency in seconds
 	pollFreq : 60, 
 	// mysql settings
