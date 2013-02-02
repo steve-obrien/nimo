@@ -53,7 +53,7 @@ function configure() {
 		});
 	});
 }
-
+// Ha ha very funny...
 function findingNimo (callback) {
 	forever.list(false,  function(n, data){
 		if (data === null) {
@@ -169,6 +169,19 @@ program
 				console.log(data);
 			}
 		})
+	});
+	
+program
+	.command('post')
+	.description('Force an imediate system scan and post the result')
+	.action(function(){
+		agent.doChecks(function(err, data){
+			console.log(data);
+			console.log('test complete'.green);
+			console.log('Post results for device: '+data.system.device);
+			agent.post(data);
+		});
+		
 	});
 
 program
