@@ -22,10 +22,10 @@ var configDefault = {
 	},
 	// Mongo Db logging!
 	"mongodb" : {
-		"server" : '' 
+		"connectionString" : '' 
 	},
 	// logging level, options: 'debug' or 'normal'
-	"logging" : "nomal" 
+	"logging" : "normal" 
 };
 
 module.exports = configDefault;
