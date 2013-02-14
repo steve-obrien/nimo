@@ -217,6 +217,7 @@ program
 		});
 		
 		configShow();
+	});
 		
 program
 	.command('post')
