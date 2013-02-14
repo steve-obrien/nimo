@@ -53,7 +53,7 @@ function configure() {
 		});
 	});
 }
-
+// Ha ha very funny...
 function findingNimo (callback) {
 	forever.list(false,  function(n, data){
 		if (data === null) {
@@ -100,7 +100,8 @@ program
 
 program
 	.command('test')
-	.description('Run a test system scan and display the data package that would be posted')
+	.description('Run a test system scan and display the data pack\n\
+	age that would be posted')
 	.action(function(){
 		agent.doChecks(function(err, data){
 			console.log(data);
@@ -175,30 +176,29 @@ program
 		})
 	});
 	
+config.get = function(path) {
+	var tokens = path.split('.'), val = this[tokens[0]];
+	if (tokens.length < 2) return val;
+	for(var i = 1; i < tokens.length; i++) {
+	   val = val[tokens[i]];
+	}
+	return val;
+};
 
-	config.get = function(path) {
-		var tokens = path.split('.'), val = this[tokens[0]];
-		if (tokens.length < 2) return val;
-		for(var i = 1; i < tokens.length; i++) {
-		   val = val[tokens[i]];
-		}
-		return val;
-	};
-	
-	config.set = function(path, value) {
-		var obj = this;
-		tokens = path.split('.');
-		if (tokens.length < 2) {
-			if (_.isUndefined(obj[tokens])) return false;
-			return obj[tokens] = value;
-		}
-		for (var i = 0, len = tokens.length; i < len - 1; i++) {
-			if (_.isUndefined(obj[tokens[i]])) return false;
-			obj = obj[tokens[i]];
-		}
+config.set = function(path, value) {
+	var obj = this;
+	tokens = path.split('.');
+	if (tokens.length < 2) {
+		if (_.isUndefined(obj[tokens])) return false;
+		return obj[tokens] = value;
+	}
+	for (var i = 0, len = tokens.length; i < len - 1; i++) {
 		if (_.isUndefined(obj[tokens[i]])) return false;
-		return obj[tokens[i]] = value;
-	};
+		obj = obj[tokens[i]];
+	}
+	if (_.isUndefined(obj[tokens[i]])) return false;
+	return obj[tokens[i]] = value;
+};
 	
 program
 	.command('setconfig <option> <value>')
@@ -218,6 +218,16 @@ program
 		
 		configShow();
 		
+program
+	.command('post')
+	.description('Force an imediate system scan and post the result')
+	.action(function(){
+		agent.doChecks(function(err, data){
+			console.log(data);
+			console.log('test complete'.green);
+			console.log('Post results for device: '+data.system.device);
+			agent.post(data);
+		});
 	});
 
 program

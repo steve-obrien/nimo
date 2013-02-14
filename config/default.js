@@ -4,7 +4,7 @@ var configDefault = {
 	// ?? key ?? your api key to identify you as a cutomer... todo
 	key : '???', 
 	// url to the monitoring service
-	url : 'http://hub.newicon.net/hosting/server/monitor',
+	url : 'http://server.app.newicon.net/servermon/server/monitor',
 	// The polling frequency in seconds
 	pollFreq : 60, 
 	// mysql settings
@@ -22,10 +22,10 @@ var configDefault = {
 	},
 	// Mongo Db logging!
 	"mongodb" : {
-		"server" : '' 
+		"connectionString" : '' 
 	},
 	// logging level, options: 'debug' or 'normal'
-	"logging" : "nomal" 
+	"logging" : "normal" 
 };
 
 module.exports = configDefault;

@@ -1,7 +1,8 @@
+
 {
   "name": "nimo",
   "description": "Nimon the deamon! Deamon to gather server stats, disk useage, load averages, processes, mysql stats, etc, and post frequently to a server monitoring tool!",
-  "version": "0.2.12",
+  "version": "0.3.1",
   "author": "Newicon Ltd - Steve O'Brien <steve.obrien@newicon.net>",
   "maintainers":["Steve O'Brien <steve.obrien@newicon.net>"],
   "repository": {
@@ -14,12 +15,13 @@
     "async":"0.1.22",
     "config":"0.4.17",
     "js-yaml":"1.0.2",
-	"mysql":"2.0.0-alpha3",
-	"request":"2.11.4",
-	"underscore":"1.4.1",
-	"forever":"0.10.0",
-	"colors":"0.6.0-1",
-	"commander":"1.0.5"
+    "mysql":"2.0.0-alpha3",
+    "request":"2.11.4",
+    "underscore":"1.4.1",
+    "forever":"0.10.0",
+    "colors":"0.6.0-1",
+    "commander":"1.0.5",
+	"mongodb":"1.2.11"
   },
   "main":"nimo.js",
   "bin": {
