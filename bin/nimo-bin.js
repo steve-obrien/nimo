@@ -78,6 +78,22 @@ function start () {
 	});
 }
 
+function configShow(){
+	console.log('Nimo Core:'.bold);
+	console.log('  url  '.cyan + ' : '.grey + config.url)
+
+	console.log('MySQL Settings:'.bold);
+	if (config.mysql.monitor) {
+		console.log('  mysql.monitor  '.cyan + ' : '.grey + config.mysql.monitor)
+		console.log('  mysql.host     '.cyan + ' : '.grey + config.mysql.host)
+		console.log('  mysql.user     '.cyan + ' : '.grey + config.mysql.user)
+		console.log('  mysql.password '.cyan + ' : '.grey + config.mysql.password)
+		console.log('  mysql.slave    '.cyan + ' : '.grey + config.mysql.slave)
+	} else {
+		console.log('  mysql.monitor  '.cyan + ' : '.grey + config.mysql.monitor)
+	}
+}
+
 program
   .version(pkg.version)
   .usage('[command|options]');
@@ -103,19 +119,7 @@ program
 	.command('config')
 	.description('Show the current configuration settings for Nimo')
 	.action(function(){
-		console.log('Nimo:'.bold);
-		console.log('    url      : '.grey + config.url)
-		
-		console.log('MySQL Settings:'.bold);
-		if (config.mysql.monitor) {
-			console.log('    monitor  : '.grey + config.mysql.monitor)
-			console.log('    host     : '.grey + config.mysql.host)
-			console.log('    user     : '.grey + config.mysql.user)
-			console.log('    password : '.grey + config.mysql.password)
-			console.log('    slave    : '.grey + config.mysql.slave)
-		} else {
-			console.log('    monitor     : '.grey + config.mysql.monitor)
-		}
+		configShow();
 	});
 
 program
@@ -169,6 +173,51 @@ program
 				console.log(data);
 			}
 		})
+	});
+	
+
+	config.get = function(path) {
+		var tokens = path.split('.'), val = this[tokens[0]];
+		if (tokens.length < 2) return val;
+		for(var i = 1; i < tokens.length; i++) {
+		   val = val[tokens[i]];
+		}
+		return val;
+	};
+	
+	config.set = function(path, value) {
+		var obj = this;
+		tokens = path.split('.');
+		if (tokens.length < 2) {
+			if (_.isUndefined(obj[tokens])) return false;
+			return obj[tokens] = value;
+		}
+		for (var i = 0, len = tokens.length; i < len - 1; i++) {
+			if (_.isUndefined(obj[tokens[i]])) return false;
+			obj = obj[tokens[i]];
+		}
+		if (_.isUndefined(obj[tokens[i]])) return false;
+		return obj[tokens[i]] = value;
+	};
+	
+program
+	.command('setconfig <option> <value>')
+	.description('Set a config option e.g: mysql.host localhost')
+	.action(function(option, value){
+		//console.log(config)
+		// set conf to current config options
+		if (!config.set(option, value)){
+			console.log('Incorrect config option');
+			return false;
+		}
+		
+		fs.writeFile(__dirname+'/../config/config.json', JSON.stringify(config, null, 2), function (err) {
+			if (err) throw err;
+			console.log('Config updated!'.bold.green);
+		});
+		
+		configShow();
+		
 	});
 
 program
