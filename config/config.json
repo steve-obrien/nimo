@@ -6,7 +6,7 @@
   "mysql": {
     "monitor": "true",
     "host": "localhost",
-    "user": "?",
+    "user": "root",
     "password": "",
     "slave": false
   },
