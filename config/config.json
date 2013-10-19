@@ -1,1 +1,20 @@
-{}
+{
+  "device": "",
+  "key": "???",
+  "url": "http://local.newicon.org/servermon/htdocs/servermon/server/monitor",
+  "pollFreq": 60,
+  "mysql": {
+    "monitor": "true",
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "slave": false
+  },
+  "apache": {
+    "statusUrl": "http://127.0.0.1/server-status?auto"
+  },
+  "mongodb": {
+    "server": ""
+  },
+  "logging": "nomal"
+}
