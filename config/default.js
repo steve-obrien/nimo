@@ -22,7 +22,7 @@ var configDefault = {
 	},
 	// Mongo Db logging!
 	"mongodb" : {
-		"connectionString" : '' 
+		"connectionString" : 'mongodb://127.0.0.1:27017/' 
 	},
 	// logging level, options: 'debug' or 'normal'
 	"logging" : "normal" 
